@@ -1,0 +1,56 @@
+# Place the cursor inside "graph" to get some refactoring options
+
+graph {
+
+    # Hover over color names to get a color picker
+    
+    # Get completion when assigning a shape or color
+    app [shape=box, color=blue,tooltip="Main" ];
+    ui [shape=box, color=red,tooltip="UI Related" ];
+    data [shape=box, color=red,tooltip="Database" ];
+    user_io [shape=box, color=red,tooltip="Form IO" ];
+    device [shape=box, color=red,tooltip="Device Sensors" ];
+
+
+    app -- ui
+    app -- user_io
+    app -- data
+    app -- device
+    data -- disk
+    data -- web
+    data -- cloud_db
+    user_io -- capture
+    user_io -- browse
+    user_io -- edit
+    capture -- text
+    capture -- date
+    capture -- listbox
+    capture -- radiobox
+    capture -- combobox
+    capture -- photo
+    capture -- location
+    capture -- sensor
+    device -- gps
+    device -- orientation
+    disk -- read_file
+    disk -- write_file
+    web -- post
+    web --  get
+    cloud_db -- authenticate
+    cloud_db -- read_table
+    cloud_db -- read_field
+    cloud_db -- insert_record
+    cloud_db -- update_record
+    cloud_db -- query_table
+    cloud_db -- connection_management
+    app -- forms
+    forms -- login
+    forms -- splash
+    forms -- scroll_list
+    forms -- browse
+    forms -- lookup_record
+    forms -- get_photo
+    get_photo -- from_gallery
+    get_photo -- from_camera
+
+}
