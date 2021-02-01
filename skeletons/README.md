@@ -6,3 +6,5 @@ mobile, vr, game, etc.
 Not meant to be useful to anyone other than me.
 
 They are formatted as something I can understand rather than best practises
+
+Files with extension .gv must be viewed in a GraphViz Client.
